@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Titillium Web, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom right, #ffffff, #0a4ea7);
+    min-height: 100vh;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 5
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: red;
+}
+
+.custom-a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #0a4ea7;
+}
+
+.custom-a:hover {
+    color: red;
+    font-weight: 800;
+    border-bottom: solid 2px red;
+}
+
+.first-container {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.first-container h1 {
+    text-align: left;
+    line-height: 100%;
+    font-size: 100px;
+    padding-bottom: 20px;
+}
+
+.first-container h3 {
+    padding-bottom: 40px;
+}
+
+.first-container p {
+    text-align: justify;
+}
+
+.intro {
+    max-width: 50%;
+}
+
+.nerd-img {
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.295));
+}
+
+.title {
+    text-align: left;
+    padding-left: 30px;
+    border-left: solid 8px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.cursos-lista {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 0 auto 5%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.cursos {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.cursos p {
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+    border-left: 5px solid #0056c0;    
+}
+
+.curso-img {
+    width: 300px;
+}
+
+.valor {
+    color: #0056c0; 
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+    border-top: 1px solid #0056c0;
+    border-bottom: 1px solid #0056c0;
+}
+
+.valor-btn {
+    color: white;
+    background-color: #0056c0;
+    padding: 15px 35px;
+    margin: 25px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.valor-btn:hover {
+    background-color: #b10000;
+    transition: background-color 200ms ease-out;
+    transition: 0.3s ease-in-out 0s;
+    transform: translateY(-4px);
+    filter: drop-shadow(3px 10px 4px rgba(0, 0, 0, 0.295));
+}
+
+.valor-btn:active {
+    transform: translateY(4px);
+}
+
+.second-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.teste-container {
+    padding: 0 10% 0 10%;
+}
+
+.teste-btn {
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    padding: 15px 45px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.teste-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.teste-btn:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+.teste-btn:active {
+    transform: translateY(2px);
+}
+
+.post-title {
+    margin: auto;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+
+.blog-container {
+    padding: 0 10% 0 10%;
+}
+
+.blog-container p {
+    text-align: left;
+    padding-left: 30%;
+}
+
+.dep-pic {
+    border-radius: 50%;
+    width: 200px;
+    padding: 30px;
+}
+
+.tes-box {
+    display: flex;
+    align-items: center;
+}
+
+.testimony p {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.client {
+    color: white;
+}
+
+.slideshow-container {
+    max-width: 500px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+  }
+  
+.testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+.prev {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 80%;
+    text-align: justify;
+}
+
+.client {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 100px 2px 20px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #ff0000;
+}
+  
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+footer {
+    background-color: white;
+}
+
+.footer {
+    background-color: rgb(41, 41, 41);
+    color: rgb(136, 136, 136);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 200px;
+}
+
+.pre-footer {
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 420px;
+    margin: 20px auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #0056c0;
+} 
+
+
+.fa {
+    background-color:rgb(46, 11, 173);
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #f70000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #45d4ff;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+
+@media (max-width: 500px){
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        padding: 20px;
+        border-bottom: solid 1px;
+    }
+
+    .intro, .teste {
+        padding-top: 20px;
+    }
+
+    .intro p {
+        text-align: justify;
+    }
+
+    .nerd-img {
+        display: none;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+
+    .cursos-lista {
+        border-radius: 0%;
+        margin: auto;
+    }
+
+    .teste {
+        padding: 0;
+    }
+
+    .teste-container .teste h3 {
+        margin: 0 10% 0 10%;
+    }
+
+    .blog-container p {
+        padding-left: 10%;
+    }
+
+}
+
+@media (max-width: 950px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    h3 {
+        padding: 20px;
+        border-bottom: solid 1px;
+    }
+    
+    .intro {
+        max-width: 100%;
+    }
+
+    .intro p {
+        text-align: justify;
+    }
+
+    .first-container {
+        padding: 0 40px;
+    }
+
+    .first-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .first-container h1 {
+        font-size: 80px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    .first-container h3 {
+        padding-bottom: 10px;
+    }
+    
+    .first-container p {
+        text-align: justify;
+    }
+    
+    .nerd-img {
+        padding-top: 20%;
+        height: 500px;
+    }
+
+    .cursos-lista {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .second-container {
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .teste-container {
+        padding: 0;
+    }
+
+    .teste h3 {
+        padding-bottom: 10px;
+        margin: 0 20% 0 20%;
+    }
+
+    .blog-container {
+        padding: 0;
+    }
+
+    .blog-container p {
+        padding-left: 15%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}

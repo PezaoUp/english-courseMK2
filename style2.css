@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Titillium Web, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom right, #ffffff, #77b2ff);
+    min-height: 100vh;
+}
+
+form {
+    padding: 100px 100px 20px 100px;
+}
+
+h4 {
+    padding: 100px 0 0 0;
+}
+
+.questions {
+    text-align: left;
+    margin-left: 30%;
+}
+
+span {
+    color: red;
+    font-weight: 900;
+    padding-right: 15px;
+}
+
+.question {
+    padding: 5px;
+}
+
+input {
+    width: 150px;
+    border: 0px;
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button {
+    padding: 5px 70px;
+    margin: 40px;
+    font-size: 26px;
+    font-weight: 900;
+    color: red;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+}
+
+p {
+    color: red;
+    font-size: 16px;
+}
+
+.checkmark {
+    color: #00bd00;
+}
+
+footer {
+    background-color: white;
+}
+
+.footer {
+    background-color: rgb(41, 41, 41);
+    color: rgb(136, 136, 136);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 200px;
+}
+
+.footer p {
+    color: #919191;
+}
+
+.pre-footer {
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 420px;
+    margin: 20px auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #0056c0;
+} 
+
+.fa {
+    background-color:rgb(46, 11, 173);
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #f70000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #45d4ff;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+@media (max-width: 1080px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    form {
+        padding: 20px;
+    }
+
+    .questions {
+        margin-left: 10px;
+    }
+
+}
